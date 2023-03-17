@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const SignUpContainer = styled.div`
   width: 100%;
-  margin: -10px auto 0 auto;
+  margin: 0 auto;
   padding: 0 0 150px 0;
 
   @media screen and (max-width: 800px) {
@@ -48,8 +48,11 @@ export const SignUpRedirect = styled.h2`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px 0 30px 0;
+  margin: 15px 0 30px 0;
   cursor: pointer;
+  font-family: seren;
+  font-weight: 600;
+  letter-spacing: 1px;
 
   @media screen and (max-width: 800px) {
     margin: 0;

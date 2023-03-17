@@ -31,6 +31,10 @@ export const Image = styled.img`
 
 export const AddButton = styled(CustomButton)`
   @media screen and (max-width: 830px) {
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    overflow: none;
   }
 `;
 
@@ -45,6 +49,12 @@ export const CollectionFooter = styled.div`
 export const Flex = styled.div`
   display: flex;
   gap: 20px;
+  align-items: center;
+
+  @media screen and (max-width: 830px) {
+    gap: 0;
+    margin: 10px 0 0 0;
+  }
 `;
 
 export const FooterName = styled.span`
@@ -55,14 +65,16 @@ export const FooterName = styled.span`
   font-weight: 800;
 
   @media screen and (max-width: 830px) {
-    font-size: 15px;
     margin: 15px 0 0 5px;
   }
 `;
-
 export const FooterPrice = styled.span`
   width: 100%;
   padding: 10px;
   text-align: left;
   font-weight: 800;
+
+  @media screen and (max-width: 830px) {
+    font-size: 22px;
+  }
 `;

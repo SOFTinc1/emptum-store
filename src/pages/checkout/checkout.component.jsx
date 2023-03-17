@@ -1,6 +1,32 @@
 import React from "react";
-import "./checkout.styles.scss";
-import CheckoutItem from "../../components/checkout-item/checkout-item.component";
+import {
+  CheckoutContainer,
+  Head,
+  Table,
+  TableHead,
+  Image,
+  ProductName,
+  Price,
+  Quantity,
+  Total,
+  Delete,
+  PaymentDiv,
+  CouponDiv,
+  Coupon,
+  CouponButtonDiv,
+  CouponCode,
+  ButtonCon,
+  OrderPaymentDiv,
+  Total1,
+  Total2,
+  Total3,
+  Delivery,
+  Discount,
+  TotalDiv,
+  Span
+} from "./checkout.styles";
+import CheckoutItemMain from "../../components/checkout-item-main/checkout-item-main.component";
+import Header from "../../components/header/header.component";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import {
@@ -9,31 +35,42 @@ import {
 } from "../../redux/cart/cart.selectors";
 
 const CheckoutPage = ({ cartItems, total }) => (
-  <div className="checkout-page">
-    <div className="gridThinghs">
-      <div className="check-list">
-        {cartItems.map((cartItem) => (
-          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-        ))}
-      </div>
-      <div className="total">
-        <span className="delivery">Delivery Fee: FREE</span> <br />
-        <span className="total-span">product price: ${total}</span> <br />
-        <span className="total-span">total: ${total}</span>
-      </div>
-    </div>
+  <CheckoutContainer>
+    <Header />
+    <Head className="head">order checkout</Head>
+    <Table>
+      <TableHead>
+        <Image></Image>
+        <ProductName>product</ProductName>
+        <Price>price</Price>
+        <Quantity>quantity</Quantity>
+        <Total>Price Per Item</Total>
+        <Delete>delete</Delete>
+      </TableHead>
+      {cartItems.map((cartItem) => (
+        <CheckoutItemMain key={cartItem.id} cartItem={cartItem} />
+      ))}
+    </Table>
 
-    {/* <div className="paymentdiv">
-      <div></div>
-      <div className="payment">
-        <div className="total">
-          <span className="delivery">Delivery Fee: FREE</span>
-          <span className="total-span">product price: ${total}</span>
-          <span className="total-span">total: ${total}</span>
-        </div>
-      </div>
-    </div> */}
-  </div>
+    <PaymentDiv>
+      <CouponDiv>
+        <Coupon>coupon code</Coupon>
+        <CouponButtonDiv>
+          <CouponCode>hruacv131e3</CouponCode>
+          <ButtonCon>enter</ButtonCon>
+        </CouponButtonDiv>
+      </CouponDiv>
+      <OrderPaymentDiv>
+        <Total1>product total :<Span></Span>${total}</Total1>
+        <Delivery>delivery total :<Span></Span>$0.00</Delivery>
+        <Discount>discount total :<Span></Span>$0.00</Discount>
+         <TotalDiv>
+          <Total2>total price :</Total2>
+          <Total3>${total}</Total3>
+         </TotalDiv>
+      </OrderPaymentDiv>
+    </PaymentDiv>
+  </CheckoutContainer>
 );
 
 const mapStateToProps = createStructuredSelector({

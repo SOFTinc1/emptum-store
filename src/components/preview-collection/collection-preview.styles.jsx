@@ -4,7 +4,6 @@ export const CollectionPreviewContainer = styled.div`
   margin: 30px 0;
   padding: 0 1rem;
   width: 100%;
-  background: #fff;
 
   @media screen and (max-width: 800px) {
     padding: 0 8px ;

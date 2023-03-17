@@ -14,7 +14,7 @@ import {
   Option,
   Location,
   ButtonCon,
-  OptionDiv,
+  // OptionDiv,
 } from "./header.styles";
 import "./header.css";
 
@@ -54,7 +54,7 @@ function Header({ currentUser }) {
                     </Option>
                   </Nav.Link>
                   <Nav.Link>
-                    <Option to="/" className="locationDiv">
+                    <Option to="" className="locationDiv">
                       <DarkMode />
                       <Location>dark/light mode</Location>
                     </Option>
@@ -78,7 +78,7 @@ function Header({ currentUser }) {
               <Nav.Link className="option-nav ms-auto">
                 <Option to="/">
                   <ButtonCon onClick={() => auth.signOut()}>
-                    user:  {currentUser.displayName}
+                   {currentUser.displayName}
                   </ButtonCon>
                 </Option>
               </Nav.Link>

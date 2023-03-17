@@ -5,7 +5,7 @@
   height: 45px;
   filter: grayscale(100%);
   border-radius: 50%;
-  margin: 0 0 0 -10px;
+  margin: 0 -10px;
   border: none;
   transition: background-color 1s ease-in-out, filter 1s ease-in-out;
 }

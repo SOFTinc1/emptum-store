@@ -22,7 +22,7 @@ class ShopPage extends React.Component {
   render() {
     const { isCollectionFetching, isCollectionsLoaded } = this.props;
     return (
-      <div style={{ background: "#fff" }}>
+      <div>
         <Header />
         <Routes>
           <Route

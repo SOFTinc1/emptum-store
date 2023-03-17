@@ -1,12 +1,7 @@
-// import Alert from "react-bootstrap/Alert";
-// function Alert() {
-//   return ;
-// }
-
 export const addItemToCart = (cartItems, cartItemToAdd) => {
   const existingCartItem = cartItems.find(
     (cartItem) => cartItem.id === cartItemToAdd.id,
-    alert("item added to cart successfully")
+    // alert("item added to cart successfully")
   );
 
   if (existingCartItem) {

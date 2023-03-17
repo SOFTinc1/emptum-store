@@ -18,11 +18,15 @@ export const SigninContainer = styled.div`
 export const GoogleButton = styled.div`
   display: flex;
   gap: 20px;
-  border: 2px solid #1d1d1d;
+  border: 1px solid #1d1d1d;
   border-radius: 4px;
   padding: 10px;
   justify-content: center;
   cursor: pointer;
+
+  @media screen and (max-width: 800px) {
+    gap: 5px;
+  }
 `;
 export const Icon = styled(FcGoogle)`
   width: 30px;
@@ -34,6 +38,11 @@ export const GoogleText = styled.h1`
   text-transform: capitalize;
   font-size: 22px;
   align-items: center;
+
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+    margin: 6px 0 0 0;
+  }
 `;
 export const Or = styled.h1`
   font-weight: 600;

@@ -1,6 +1,7 @@
 :root {
   --blue: #263238;
-  --white: #fafafa;
+  --white: #fff;
+  --border: #1d1d1d;
 }
 body {
   background: var(--background-color);
@@ -14,12 +15,14 @@ body.light {
   --text-color: var(--blue);
   --font-weight: 400;
   --span-color: var(--black);
+  --border: 1px solid var(--blue);
 }
 
 body.dark {
   --background-color: var(--blue);
   --text-color: var(--white);
   --font-weight: 500;
+  --border: 1px solid var(--white);
 }
 .container {
   margin-top: -38px;

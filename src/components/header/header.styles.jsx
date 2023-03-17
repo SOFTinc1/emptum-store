@@ -13,7 +13,7 @@ export const HeaderContainer = styled.div`
   // background: #fff;
   // border-top: 1px solid #1d1d1d;
   // border-bottom: 1px solid #1d1d1d;
-  margin: 20px 0 0 0;
+  margin: 10px 0 0 0;
 
   @media screen and (max-width: 830px) {
     margin: 0;
@@ -31,7 +31,7 @@ export const LogoImg = styled.img`
 
   @media screen and (max-width: 830px) {
     margin: 0 0 0 0;
-    width: 80px;
+    width: 150px;
   }
 `;
 export const Option = styled(Link)`
@@ -69,8 +69,12 @@ export const Location = styled.p`
 `;
 export const ButtonCon = styled(CustomButton)`
   @media screen and (max-width: 830px) {
-    font-size: 12px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    width: 100px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: block;
+    overflow: hidden;
   }
 `;
 export const OptionDiv = styled.div`

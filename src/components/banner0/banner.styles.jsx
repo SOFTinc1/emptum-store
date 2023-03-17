@@ -5,7 +5,7 @@ export const BannerContainer = styled.div`
   width: 100%;
 
   @media screen and (max-width: 830px) {
-    padding: 30px 0;
+    padding: 10px 0;
   }
 `;
 export const Upper = styled.div`
@@ -49,7 +49,7 @@ export const H1 = styled.h1`
 
   @media screen and (max-width: 830px) {
     font-size: 70px;
-    margin: -350px 0 0 20px;
+    margin: -400px 0 0 20px;
     color: #fff;
   }
 `;
