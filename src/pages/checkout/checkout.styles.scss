@@ -1,0 +1,116 @@
+.checkout-page {
+  width: 100%;
+  background-color: #fbfbfb;
+  padding: 0 0 150px 0;
+
+  @media screen and (max-width: 800px) {
+    padding: 0 0 300px 0;
+  }
+
+  .gridThinghs {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-gap: 10px;
+    padding: 50px 50px;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+      padding: 0 0 100px 0;
+    }
+  }
+
+  .check-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+    @media screen and (max-width: 800px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    width: 100vw;
+    padding: 0 5px;
+  }
+
+  .header-block {
+    text-transform: capitalize;
+    width: 100%;
+    font-weight: bold;
+
+    @media screen and (max-width: 800px) {
+      font-size: 0.8rem;
+    }
+
+    span {
+      font-family: "syne";
+      letter-spacing: 2px;
+      text-transform: capitalize;
+    }
+
+    &:last-child {
+      width: 100%;
+    }
+  }
+
+  // .paymentdiv {
+  //   display: grid;
+  //   grid-template-columns: 6fr 2fr;
+  //   grid-gap: 10px;
+  //   padding: 50px 100px 100px 100px;
+
+  //   @media screen and (max-width: 800px) {
+  //     display: flex;
+  //     flex-direction: column;
+  //     padding: 0 0 90px 0;
+  //   }
+  // }
+
+  // .payment {
+  //   margin: 40px 0 0 0;
+
+  // }
+
+  .total {
+    background-color: #fff;
+    color: #444946;
+    font-family: "syne";
+    font-weight: 800;
+    font-size: 20px;
+    margin: 5px 0;
+    border-radius: 5px;
+    padding: 50px 30px;
+    height: 210px;
+    // position: fixed;
+    // z-index: 999;
+
+    @media screen and (max-width: 800px) {
+      font-size: 30px;
+      border-radius: 0;
+      // border-top: 2px solid #444946;
+      // border-bottom: none;
+      // border-right: none;
+      // border-left: none;
+    }
+
+    .total-span {
+      text-transform: capitalize;
+      font-size: 18px;
+      color: #444946;
+      font-family: "Syne";
+      font-weight: 800;
+      font-size: 20px;
+
+      @media screen and (max-width: 800px) {
+        font-size: 30px;
+      }
+    }
+  }
+
+  button {
+    margin: 10px 0 0 auto;
+  }
+}

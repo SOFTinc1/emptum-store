@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'agory';
+  src: local('agory'), url(./assets/fonts/agory.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'seren';
+  src: local('seren'), url(./assets/fonts/serenata-vantages-font-1678869082-0/serenatavantageslight-vmxgo.ttf) format('truetype');
+}
+
+body {
+  margin: 0;
+  /* font-family: "Syne", "typo"; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (max-width: 800px) {
+    padding: 0;
+  }
+}
