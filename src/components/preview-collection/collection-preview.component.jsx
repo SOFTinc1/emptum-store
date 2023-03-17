@@ -1,7 +1,7 @@
 import React from "react";
 import {
   CollectionPreviewContainer,
-  Title,
+  // Title,
   Preview,
 } from "./collection-preview.styles";
 import CollectionItem from "../collection-item/collection-item.component";
@@ -16,12 +16,12 @@ const CollectionPreview = ({ title, items }) => (
           <CollectionItem key={item.id} item={item} />
         ))}
     </Preview>
-    <Routes>
+    {/* <Routes>
       <Route
         path=":collectionId"
         element={<CollectionPageWithSpinner isLoading={!isCollectionsLoaded} />}
       />
-    </Routes>
+    </Routes> */}
   </CollectionPreviewContainer>
 );
 

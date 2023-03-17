@@ -6,13 +6,13 @@ export const HeaderContainer = styled.div`
   width: 100%;
   padding: 10px 0;
   height: 70px;
-  // background: rgba(255, 255, 255, 0.2);
-  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  // backdrop-filter: blur(5px);
-  // -webkit-backdrop-filter: blur(5px);
-  border-top: 1px solid #1d1d1d;
-  border-bottom: 1px solid #1d1d1d;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  // background: #fff;
+  // border-top: 1px solid #1d1d1d;
+  // border-bottom: 1px solid #1d1d1d;
   margin: 20px 0 0 0;
 
   @media screen and (max-width: 830px) {
