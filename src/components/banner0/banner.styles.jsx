@@ -6,6 +6,7 @@ export const BannerContainer = styled.div`
 
   @media screen and (max-width: 830px) {
     padding: 10px 0;
+    margin: 0 0 50px 0;
   }
 `;
 export const Upper = styled.div`
@@ -34,9 +35,11 @@ export const Head = styled.h1`
   text-align: right;
   margin: 120px 0 0 0;
 
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 990px) {
     display: none;
   }
+
+  
 `;
 export const H1 = styled.h1`
   text-transform: capitalize;
@@ -47,6 +50,10 @@ export const H1 = styled.h1`
   text-align: left;
   margin: 120px 0 0 0;
 
+  @media screen and (max-width: 1024px) {
+    margin: -400px 0 0 20px;
+    color: #fff;
+  }
   @media screen and (max-width: 830px) {
     font-size: 70px;
     margin: -400px 0 0 20px;
@@ -59,13 +66,15 @@ export const Image1 = styled.img`
   transition: background-image 0.7s ease-in-out;
   z-index: -9;
 
-  @media screen and (max-width: 830px) {
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    height: 100vh;
+    margin: -350px 0 0 0;
+  }
+  @media screen and (max-width: 990px) {
     width: 100%;
     height: 100vh;
     margin: -110px 0 0 0;
-  }
-
-  @media screen and (max-width: 525px) {
   }
 `;
 export const NewsCon = styled.div`
@@ -74,6 +83,9 @@ export const NewsCon = styled.div`
   padding: 0 40px;
   position: relative;
 
+  @media screen and (max-width: 1024px) {
+    margin: 150px 0 0 0;
+  }
   @media screen and (max-width: 830px) {
     margin: 50px 0 0 0;
     padding: 0;

@@ -16,7 +16,7 @@ const TextStyles = css`
 export const CheckoutItemMainContainer = styled.div``;
 
 export const Table = styled.div`
-margin: 0;
+  margin: 0;
 `;
 export const ProductName = styled.h1`
   ${TextStyles}
@@ -29,6 +29,10 @@ export const Quantity = styled.h1`
 `;
 export const Total = styled.h1`
   ${TextStyles}
+
+  @media screen and (max-width: 830px) {
+    display: none;
+  }
 `;
 export const TableBody = styled.div`
   display: grid;
@@ -37,6 +41,11 @@ export const TableBody = styled.div`
   align-items: center;
   padding: 20px 0;
   border-top: 1px solid #1d1d1d;
+
+  @media screen and (max-width: 830px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+  }
 `;
 export const ImageSrc = styled.img`
   width: 70%;
@@ -45,7 +54,7 @@ export const ImageSrc = styled.img`
 
   @media screen and (max-width: 830px) {
     width: 100%;
-  height: 80px;
+    height: 80px;
   }
 `;
 export const QuantityDiv2 = styled.div`
@@ -64,8 +73,8 @@ export const RemoveIcon = styled(AiOutlineMinus)`
   margin-top: -5px;
 
   @media screen and (max-width: 830px) {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     margin-top: -10px;
   }
 `;
@@ -75,8 +84,8 @@ export const AddIcon = styled(AiOutlinePlus)`
   margin-top: -10px;
 
   @media screen and (max-width: 830px) {
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     margin-top: -8px;
   }
 `;

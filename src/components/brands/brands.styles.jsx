@@ -8,7 +8,7 @@ export const BrandsContainer = styled.div`
 
   @media screen and (max-width: 830px) {
     padding: 30px 0 30px 10px;
-    margin: 100px 0 0 0;
+    margin: 150px 0 0 0;
   }
 `;
 export const Head = styled.h1`

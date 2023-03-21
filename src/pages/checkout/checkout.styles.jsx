@@ -46,7 +46,8 @@ export const TableHead = styled.div`
   margin: 0 0 10px 0;
 
   @media screen and (max-width: 830px) {
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
   }
 `;
 export const Image = styled.h1``;
@@ -66,6 +67,10 @@ export const Quantity = styled.h1`
 export const Total = styled.h1`
   ${TextStyles}
   text-align: center;
+
+  @media screen and (max-width: 830px) {
+    display: none;
+  }
 `;
 export const Delete = styled.h1`
   ${TextStyles}
@@ -107,6 +112,7 @@ export const CouponCode = styled.div`
   ${TextStyles}
   border: 1px dashed #1d1d1d;
   padding: 10px 20px;
+  border-radius: 4px;
 
   @media screen and (max-width: 830px) {
     margin: 10px 0;
@@ -157,6 +163,7 @@ export const TotalDiv = styled.div`
   align-items: center;
   border: 1px solid #1d1d1d;
   padding: 10px 20px;
+  border-radius: 4px;
 
   @media screen and (max-width: 830px) {
     margin: 10px;

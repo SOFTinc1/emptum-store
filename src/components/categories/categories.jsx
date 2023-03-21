@@ -10,7 +10,7 @@ import {
   Position,
   Title,
   ButtonCon,
-} from "./categories.style";
+} from "../menu-items/menu-items.style";
 import Men from "../../assets/images/men.jpg";
 import Women from "../../assets/images/women.jpg";
 import Hat from "../../assets/images/hat.jpg";

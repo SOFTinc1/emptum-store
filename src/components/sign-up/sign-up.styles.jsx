@@ -11,6 +11,7 @@ export const SignupContainer = styled.div`
   @media screen and (max-width: 800px) {
     width: 100%;
     display: block;
+    padding: 0 10px;
   }
 `;
 export const ButtonsBarContainer = styled.div`

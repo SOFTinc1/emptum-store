@@ -12,7 +12,7 @@ export const SigninContainer = styled.div`
   @media screen and (max-width: 800px) {
     width: 100%;
     height: auto;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 `;
 export const GoogleButton = styled.div`
