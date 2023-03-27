@@ -22,8 +22,8 @@ export const ImgSrc = styled.img`
 `;
 export const ItemDetails = styled.div`
   width: 70%;
-  display: flex;
-  gap: 20px;
+  // display: flex;
+  // gap: 20px;
   align-items: center;
   padding: 0 30px;
 `;

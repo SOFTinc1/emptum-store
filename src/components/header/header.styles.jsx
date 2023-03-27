@@ -6,12 +6,11 @@ export const HeaderContainer = styled.div`
   width: 100%;
   padding: 10px 0;
   height: 70px;
-  // background: rgba(255, 255, 255, 0.2);
-  // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   margin: 10px 0 0 0;
-  background: #000;
   // border-top: 1px solid #1d1d1d;
   // border-bottom: 1px solid #1d1d1d;
 
@@ -21,7 +20,6 @@ export const HeaderContainer = styled.div`
     align-items: center;
     border: none;
     position: relative;
-    background: #000;
   }
 `;
 export const LogoImg = styled.img`

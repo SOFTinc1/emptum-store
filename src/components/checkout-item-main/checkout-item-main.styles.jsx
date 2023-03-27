@@ -94,6 +94,7 @@ export const DeleteIcon = styled(AiOutlineDelete)`
   height: 30px;
   text-align: center;
   margin: -15px auto 0 auto;
+  cursor: pointer;
 
   @media screen and (max-width: 830px) {
     width: 20px;

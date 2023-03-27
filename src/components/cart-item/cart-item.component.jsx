@@ -7,11 +7,10 @@ import {
   DetailsDiv,
   Name,
   Price,
-  RemoveItem,
 } from "./cart-item.styles";
 
 const CartItem = ({
-  item: { imageUrl, price, name, quantity, clearItem,cartItem }
+  item: { imageUrl, price, name, quantity }
 }) => (
   <CartItemContainer>
     <CartItemProper>
@@ -25,7 +24,6 @@ const CartItem = ({
             {quantity} X ${price}
           </Price>
         </DetailsDiv>
-        <RemoveItem onClick={() => clearItem(cartItem)}>&#x2613;</RemoveItem>
       </ItemDetails>
     </CartItemProper>
   </CartItemContainer>

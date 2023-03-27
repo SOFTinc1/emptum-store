@@ -40,7 +40,7 @@ const CheckoutItemMain = ({ cartItem, clearItem, addItem, removeItem }) => {
             <AddIcon onClick={() => addItem(cartItem)}/>
           </QuantityDiv2>
           <Total>${price}</Total>
-          <DeleteIcon />
+          <DeleteIcon onClick={() => clearItem(cartItem)}/>
         </TableBody>
       </Table>
     </CheckoutItemMainContainer>

@@ -135,6 +135,7 @@ export const Total1 = styled.h1`
 export const Total2 = styled.h1`
   ${TextStyles}
   text-align: left;
+  margin: 5px 0 0 0;
 `;
 export const Total3 = styled.h1`
   ${TextStyles}

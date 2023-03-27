@@ -34,7 +34,8 @@ export const Head = styled.h1`
   justify-content: center;
   text-align: right;
   margin: 120px 0 0 0;
-
+  padding: 0 20px 0 0;
+ 
   @media screen and (max-width: 990px) {
     display: none;
   }

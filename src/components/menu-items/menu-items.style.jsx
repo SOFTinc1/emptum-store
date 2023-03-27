@@ -24,17 +24,14 @@ export const Title = styled.h1`
   font-size: 32px;
   text-transform: capitalize;
   letter-spacing: 3px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+  background: #fff;
   padding: 20px;
   border-radius: 16px;
   margin: -125px 0 0 0;
   position: relative;
   text-align: left;
   font-weight: 800;
-  color: #fff;
+  color: #1d1d1d;
 
   @media screen and (max-width: 1024px) {
     font-size: 23.5px;

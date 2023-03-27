@@ -47,4 +47,6 @@ export const EmptyMessage = styled.div`
   margin: 50px auto;
   text-transform: capitalize;
   font-family: seren;
+  font-weight: 800;
+  letter-spacing: 1px;
 `;

@@ -8,7 +8,7 @@ const Banner0 = () => (
   <BannerContainer>
     <Header />
     <Upper>
-      <Head>shop till</Head>
+      <Head>shop <br /> till</Head>
       <Image1 src={BannerImg} />
       <H1>you feel good.</H1>
     </Upper>
